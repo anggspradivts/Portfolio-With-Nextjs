@@ -1,9 +1,9 @@
-'use client'
-import React from 'react'
-import PopoutComponent from "./PopoutComponent"
-import Image from "next/image"
+"use client";
+import React from "react";
+import PopoutComponent from "./PopoutComponent";
+import Image from "next/image";
 
-const downArrowImage = "/icons/down-arrow.png"
+const downArrowImage = "/icons/down-arrow.png";
 
 const Banner = () => {
   return (
@@ -13,14 +13,22 @@ const Banner = () => {
           <h1 className="text-8xl">Hello</h1>
         </div>
         <div className="banner-text flex justify-center items-start text-center">
-          <h1 className='text-2xl'>I'm Angga Pradivta, Fullstack Web Developer</h1>
+          <h1 className="text-2xl">
+            I'm Angga Pradivta, Fullstack Web Developer
+          </h1>
         </div>
-        <div className='flex justify-center items-center h-20 ' >
-          <Image id='scroll-trigger' src={downArrowImage} height={100} width={100} alt='down arrow'/>
+        <div className="flex justify-center items-center h-20">
+          <Image
+            id="scroll-trigger"
+            src={downArrowImage}
+            height={100}
+            width={100}
+            alt='down arrow'
+          />
         </div>
       </div>
     </PopoutComponent>
-  )
-}
+  );
+};
 
-export default Banner
+export default Banner;
