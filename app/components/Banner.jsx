@@ -2,7 +2,6 @@
 import React from 'react'
 import PopoutComponent from "./PopoutComponent"
 import Image from "next/image"
-import { useRouter } from "next/router"
 
 const downArrowImage = "/icons/down-arrow.png"
 

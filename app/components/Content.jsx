@@ -3,7 +3,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import PopoutComponent from "./PopoutComponent";
-// import profile from "/"
 
 const profile = "/MyProfile2__1_-removebg-preview.png";
 const projectImage = "/wallhaven-nm2e5m.jpg"
