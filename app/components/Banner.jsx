@@ -7,27 +7,6 @@ import { useRouter } from "next/router"
 const downArrowImage = "/icons/down-arrow.png"
 
 const Banner = () => {
-  // const router = useRouter()
-  // const triggerElementRef = useRef(null)
-  // const nextComponentRef = useRef(null)
-
-  // useEffect(() => {
-  //   if (triggerElementRef.current && nextComponentRef.current) {
-  //     triggerElementRef.current.addEventListener('click', () => {
-  //       nextComponentRef.current.scrollIntoView({ behavior: 'smooth' })
-  //     })
-  //   }
-
-  //   return () => {
-  //     if (triggerElementRef.current) {
-  //       triggerElementRef.current.removeEventListener('click', () => {
-  //         nextComponentRef.current.scrollIntoView({ behavior: 'smooth' })
-  //       })
-  //     }
-  //   }
-  // }, [router.asPath])
-
-
   return (
     <PopoutComponent>
 
