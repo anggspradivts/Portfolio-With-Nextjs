@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import PopoutComponent from "./PopoutComponent";
 
-const profile = "/MyProfile2__1_-removebg-preview.png";
-const projectImage = "/wallhaven-nm2e5m.jpg"
+const profile = "/images/profile-image.png";
+const projectImage = "/images/wallhaven-nm2e5m.jpg"
 
 const Content = () => {
   return (
