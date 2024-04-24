@@ -6,22 +6,21 @@ const PopoutComponent = ({ children }) => {
   const ref = useRef(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!hasPoppedOut) {
-          setIntersecting(entry.isIntersecting);
-        }
-      },
-      { threshold: 0.5 }
-    );
-    if (ref.current) {
-      observer.observe(ref.current);
+    const target = ref.current;
+    if (target) {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (!hasPoppedOut) {
+            setIntersecting(entry.isIntersecting);
+          }
+        },
+        { threshold: 0.5 }
+      );
+      observer.observe(target);
+      return () => {
+        observer.unobserve(target);
+      };
     }
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
   }, [hasPoppedOut]);
 
   useEffect(() => {

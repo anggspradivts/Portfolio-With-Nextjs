@@ -1,8 +1,12 @@
 "use client";
 import React from "react";
 import PopoutComponent from "./PopoutComponent";
+import Image from "next/image"
 
 const Contact = () => {
+  const iconGit = "/icons/github.png"
+  const iconIg = "/icons/instagram.png"
+  const iconTwit = "/icons/twitter.png"
   return (
     <PopoutComponent>
       <div className="contact-container w-full h-[60vh] flex justify-center">
@@ -20,9 +24,9 @@ const Contact = () => {
             <h1>This is form</h1>
           </div>
           <div className="socialmedia flex items-center gap-4 col-span-full">
-            <img className="h-5 md:h-7 lg:h-10" src="/icons/github.png" alt="" />
-            <img className="h-5 md:h-7 lg:h-10" src="/icons/instagram.png" alt="" />
-            <img className="h-5 md:h-7 lg:h-10" src="/icons/twitter.png" alt="" />
+            <Image className="h-5 md:h-7 lg:h-10" src={iconGit} alt="" />
+            <Image className="h-5 md:h-7 lg:h-10" src={iconIg} alt="" />
+            <Image className="h-5 md:h-7 lg:h-10" src={iconTwit} alt="" />
           </div>
         </div>
       </div>

@@ -1,9 +1,13 @@
 'use client'
+import { useEffect, useState } from "react"
 import Banner from "./components/Banner"
 import Content from "./components/Content"
 import Contact from "./components/Contact"
 import Link from "next/link"
 import WindowWidth from "./components/utils/WindowWIdth"
+
+const windowWidth = WindowWidth()
+
 
 export default function Home() {
   return (
@@ -20,7 +24,6 @@ export default function Home() {
 
 
 const Navbar = () => {
-  const windowWidth = WindowWidth()
   return (
     <div>
       {windowWidth > 1000 ? (
@@ -44,7 +47,6 @@ const Navbar = () => {
         </div>
       )}
     </div>
-    
   )
 }
 
