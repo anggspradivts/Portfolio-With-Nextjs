@@ -24,9 +24,9 @@ const Contact = () => {
             <h1>This is form</h1>
           </div>
           <div className="socialmedia flex items-center gap-4 col-span-full">
-            <Image className="h-5 md:h-7 lg:h-10" src={iconGit} alt="" />
-            <Image className="h-5 md:h-7 lg:h-10" src={iconIg} alt="" />
-            <Image className="h-5 md:h-7 lg:h-10" src={iconTwit} alt="" />
+            <Image width={50} height={50} className="h-5 md:h-7 lg:h-10" src={iconGit} alt="" />
+            <Image width={50} height={50} className="h-5 md:h-7 lg:h-10" src={iconIg} alt="" />
+            <Image width={50} height={50} className="h-5 md:h-7 lg:h-10" src={iconTwit} alt="" />
           </div>
         </div>
       </div>

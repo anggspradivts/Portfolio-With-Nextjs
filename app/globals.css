@@ -31,8 +31,18 @@ body {
 
 }
 
+.navbar-icon-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .banner-container {
   backdrop-filter: blur(5px);
+}
+
+.active {
+  background-color: red;
 }
 
 /* Content styles */

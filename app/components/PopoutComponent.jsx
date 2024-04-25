@@ -1,5 +1,5 @@
+"use client"
 import React, { useEffect, useRef, useState } from 'react';
-
 const PopoutComponent = ({ children }) => {
   const [isIntersecting, setIntersecting] = useState(false);
   const [hasPoppedOut, setHasPoppedOut] = useState(false);

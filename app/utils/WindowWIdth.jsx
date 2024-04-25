@@ -1,9 +1,8 @@
-'use client'
-import React, { useState } from 'react'
+"use client"
+import React from 'react'
 
 const WindowWIdth = () => {
-
-    const [windowWidth, setWindowWidth] = useState(0);
+    const [windowWidth, setWindowWidth] = React.useState(0);
 
     React.useEffect(() => {
       const updateWindowWidth = () => {
@@ -21,7 +20,6 @@ const WindowWIdth = () => {
     }, []);
 
     return windowWidth
-
 }
 
 export default WindowWIdth
